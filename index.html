@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Accounts</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: linear-gradient(110deg, #20231A 60%, #79574E 60%);
+			font-family: 'Lora', serif;
+
+		}
+		.me{
+
+			width: 250px;
+			border-radius: 100%;
+			border: 2px solid #8E8370;
+		}
+		.container{
+			width: 100%;
+		}
+		.pic{
+		 	
+		 	display: grid;
+  			justify-content: center;
+  			align-items: center;
+		}
+		.social{	 	
+		 	width: 30%;
+		 	height: 5em;		 	
+			background-image: linear-gradient(to left, #F8F4F4 , #838D83);
+		 	margin: 25px;
+		 	position: relative;
+		 	border-radius:  12px;
+		}
+		.socimg{
+			width: 60px;	
+			position: absolute;	
+			top: 10px;
+			left: 10px;
+			margin-right: 10px;
+			border-radius: 10%;
+
+		}
+		 a {
+ 		    text-decoration: none;
+    		color: inherit;
+ 		}
+		.content{
+			padding: 10px;
+			display: grid;
+  			place-items: center;
+  			position: relative;
+  			
+		}
+		h2{
+			text-align: center;
+			font-size: 30px;
+			color: #20231A;
+
+		}
+		h1{
+			text-align: center;
+			color: #F8F4F4;
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+		@media (max-width: 768px) {
+			.social{
+				width: 75%;
+			}
+			.socimg{
+				margin-left: 10px;
+				margin-top: 9px;
+				width:45px;
+			}
+			h2{
+				margin-left: 50px;
+			}
+			.me{
+
+			width: 200px;
+			
+		}
+			
+		}
+		/* Large devices (desktops, 992px and up) */
+		@media (min-width: 769px) and (max-width: 992px) {
+			.social{
+				width: 60%;
+			}
+			.socimg{
+				margin-left: 15px;
+			}
+			h2{
+				margin-left: 50px;
+			}
+		}
+		@media(min-width: 993px)and(max-width: 1200px){
+			.social{
+				width: 70%;
+			}
+		}
+				/* width */
+		::-webkit-scrollbar {
+		  width: 10px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  background: #f1f1f1;
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #888;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="pic"> <img class="me" src="img/pic.jpeg" class="socimg"></div>
+		<h1>Ahmed Yaseen</h1>
+		<div class="content">
+			<div class="social social1" id="in"><a href="https://www.linkedin.com/in/ahmed-yaseen-5010a9239/"><img src="img/in.jpg" class="socimg"> <h2>Linkedin</h2>
+			</a></div>
+			<div class="social" id="insta"><a href="https://www.instagram.com/yaseen_3010/?hl=en"><img src="img/insta.jpg" class="socimg"> <h2>Instagram </h2>
+			</a></div>
+			<div class="social" id="tweet"><a href="https://twitter.com/A_yaseen3010"><img src="img/tweet.jpg" class="socimg"> <h2>twitter </h2>
+			</a></div>
+			<div class="social" id="face"><a href="https://www.facebook.com/profile.php?id=100045874277316"><img src="img/face.jpg" class="socimg"> <h2>facebook </h2>
+			</a></div>			
+			<div class="social" id="git"><a href="https://github.com/ahmedyaseen3010"><img src="img/fit.jpg" class="socimg"> <h2>GitHub </h2>
+			</a></div>
+
+		</div>
+	</div>
+
+</body>
+</html>
